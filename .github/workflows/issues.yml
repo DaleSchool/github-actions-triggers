@@ -1,6 +1,7 @@
 name: Our Issues
 on:
   issues:
+    types: [opened]
 jobs:
   echo:
     runs-on: ubuntu-latest
