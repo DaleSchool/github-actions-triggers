@@ -1,0 +1,11 @@
+name: Our Push
+on:
+  push:
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ref_name=${{ github.ref_name }}"
+      - run: echo "sha=${{ github.sha }}"
+      - run: echo "name=${{ github.event_name }}"
+      
