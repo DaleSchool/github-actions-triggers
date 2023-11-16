@@ -1,6 +1,7 @@
 name: Our PR
 on:
   pull_request:
+    types: [closed]
 jobs:
   echo:
     runs-on: ubuntu-latest
